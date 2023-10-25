@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/content.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top_banner">
+        <span class="left_Inf">KT</span>
+        <span class="right_Inf">
+            <i class="fa-sharp fa-solid fa-signal-bars"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-sharp fa-solid fa-signal-bars"></i>
+            100%
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+        </span>
+    </div>
+    <div class="screen">
+        <div class="top_header">
+            코드수신함
+        </div>
+        <div class="inf_box">
+            <div class="code_inf">
+                <div class="bold">코드정보</div>
+                <div>ai2300vlek9t</div>
+            </div>
+            <div class="acc_inf">
+                <div ><span class="bold">사고장소</span><span>서울 동대문구 전농동99</span></div>
+                <div ><span class="bold">사고발생</span><span>2023년 1월 3일</span></div>
+            </div>
+            <div>
+                <div class="check_box">
+                    <span>영상제공동의</span>
+                    <input type="checkbox" name="영상제공동의" id="check_box">
+                </div> 
+            </div>
+        </div>
+        <div id="popup">
+            <div class="bold">영상정보확인</div>
+            <div class="popup_center">
+                <div class="ori_video">
+                    <video width="280" height="210" controls>
+                        <source src="원본.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class = 'bold'>원본영상</div>
+                <div class="mask_video">
+                    <video width="280" height="210" controls>
+                        <source src="마스킹.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div class = 'bold'>마스킹 처리영상</div>
+                <div class="popup_inf">※개인정보 보호를 위해 마스킹 처리되었습니다.※</div>
+                <div class="popup_submit"><input type="button" value="송신" class="submit_btn"></div>
+            </div>
+            <div class="alert">
+                전송 되었습니다.
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script
+src="https://kit.fontawesome.com/fc53c77dbe.js"
+crossorigin="anonymous"
+>
+</script>
+<script
+src="script.js">
+</script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/content.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top_banner">
+        <span class="left_Inf">KT</span>
+        <span class="right_Inf">
+            <i class="fa-sharp fa-solid fa-signal-bars"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-sharp fa-solid fa-signal-bars"></i>
+            100%
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+        </span>
+    </div>
+    <div class="screen">
+        <div class="top_header">
+            코드제출함
+        </div>
+        <div class="inf_box">
+            <div class="code_inf">
+                <div class="bold">정보 제출 항목</div>
+            </div>
+            <div class="input_div">
+                <div ><span class="bold">본인 차량 번호판</span></div>
+                <div ><input type="text" placeholder="예)1234가 4567" id="input_me" value=""></div>
+            </div>
+            <div class="input_div">
+                <div ><span class="bold">사고 차량 번호판</span></div>
+                <div ><input type="text" placeholder="예)1234가 4567" id="input_you" value=""></div>
+            </div>
+            <div class="input_div">
+                <div ><span class="bold">사고코드</span></div>
+                <div ><input type="text" placeholder="예)1234가 4567" id="input_code" value=""></div>
+            </div>
+            <div class="input_div">
+                <form action="#">
+                    <label for="place">사고유형</label>
+                    <select name="사고장소" id="input_place">
+                        <option value="차 대 차">차 대 차</option>
+                        <option value="차 대 보행자">차 대 보행자</option>
+                        <option value="차 대 자전거">차 대 자전거</option>
+                        <option value="차 대 이륜차">차 대 이륜차</option>
+                        <option value="고속도로">고속도로</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="inf_submit_btn">
+            <input type="button" value="확인" class="real_inf_submit_btn">
+        </div>
+        <div id="popup">
+            <div class="bold">제출 내용 확인</div>
+            <div class="popup_center">
+                <div><span>본인 차량 번호판</span><span class="output_me"></span></div>
+                <div><span>사고 차량 번호판</span><span class='output_you'></span ></div>
+                <div><span>사고 코드</span><span class='ouput_code'></span></div>
+                <div><span>사고 유형</span><span class="output_place"></span></div>
+
+                <div class="popup_inf">작성 내용을 검토 후 제출 버튼을 눌러주세요.</div>
+                <div class="popup_btn">
+                    <div class="popup_submit"><input type="button" class="submit_btn_submit" value="제출" ></div>
+                    <div class="popup_submit"><input type="button" class="submit_btn_cancle" value="취소" ></div>
+                </div>
+            </div>
+            <div class="alert">
+                코드가 제출되었습니다.
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script
+src="https://kit.fontawesome.com/fc53c77dbe.js"
+crossorigin="anonymous"
+>
+</script>
+<script
+src="script.js">
+</script>
+</html>
